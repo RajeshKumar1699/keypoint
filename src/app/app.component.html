@@ -1,0 +1,38 @@
+<app-header></app-header>
+<input type="checkbox" id="check">
+
+<label for="check">
+
+    <i class="fas fa-bars" id="btn">
+        <mat-icon> format_indent_increase</mat-icon>
+    </i>
+    <i class="fas fa-times" id="cancel">
+        <mat-icon> format_indent_decrease</mat-icon>
+    </i>
+
+</label>
+<div class="sidebar">
+    <header>
+        <!-- <mat-icon>child_care</mat-icon> -->
+        <!-- <span class='bi bi-robot'></span> -->
+
+    </header>
+    <ul>
+        <li><a routerLink="/home"><i class="fas fa-qrcode"></i>Home</a></li>
+        <li><a routerLink="aboutus"><i class="fas fa-link"></i>About us</a></li>
+        <li><a routerLink="partners"><i class="fas fa-calendar-week"></i>Partners</a></li>
+
+        <li><a routerLink="careers"><i class="far fa-envelope"></i>Careers</a></li>
+        <li><a routerLink="blog"><i class="far fa-envelope"></i>Blog</a></li>
+        <li><a routerLink="products"><i class="far fa-question-circle"></i>Product</a></li>
+        <li><a routerLink="login"><i class="far fa-envelope"></i>Login/signup</a></li>
+
+        <!-- <li><a routerLink="dialog"><i class="fas fa-stream"></i>Services</a></li> -->
+    </ul>
+</div>
+<section>
+    <router-outlet></router-outlet>
+</section>
+<!-- <div class="mainContent">
+    <router-outlet></router-outlet>
+</div> -->
